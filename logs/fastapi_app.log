@@ -1,0 +1,2270 @@
+2026-10-09 16:03:04,579 [INFO] ccps: POST /api/v1/auth/register -> 201 (75.0 ms)
+2026-10-09 16:03:05,125 [INFO] ccps: POST /api/v1/auth/register -> 400 (17.5 ms)
+2026-10-09 16:03:05,412 [INFO] ccps: POST /api/v1/auth/register -> 422 (17.1 ms)
+2026-10-09 16:03:05,425 [INFO] ccps: POST /api/v1/auth/register -> 422 (5.0 ms)
+2026-10-09 16:03:05,755 [INFO] ccps: POST /api/v1/auth/register -> 422 (5.5 ms)
+2026-10-09 16:03:06,186 [INFO] ccps: POST /api/v1/auth/register -> 201 (23.5 ms)
+2026-10-09 16:03:06,573 [INFO] ccps: POST /api/v1/auth/register -> 422 (1.9 ms)
+2026-10-09 16:03:07,203 [INFO] ccps: POST /api/v1/auth/login -> 200 (24.0 ms)
+2026-10-09 16:03:07,492 [INFO] ccps: POST /api/v1/auth/login -> 400 (2.7 ms)
+2026-10-09 16:03:08,234 [INFO] ccps: POST /api/v1/auth/login -> 403 (2.6 ms)
+2026-10-09 16:03:08,414 [INFO] ccps: POST /api/v1/auth/login -> 400 (6.1 ms)
+2026-10-09 16:03:08,419 [INFO] ccps: POST /api/v1/auth/login -> 400 (3.3 ms)
+2026-10-09 16:03:08,425 [INFO] ccps: POST /api/v1/auth/login -> 400 (4.3 ms)
+2026-10-09 16:03:08,431 [INFO] ccps: POST /api/v1/auth/login -> 400 (4.5 ms)
+2026-10-09 16:03:08,436 [INFO] ccps: POST /api/v1/auth/login -> 400 (4.2 ms)
+2026-10-09 16:03:08,438 [INFO] ccps: POST /api/v1/auth/login -> 429 (0.8 ms)
+2026-10-09 16:03:08,639 [INFO] ccps: POST /api/v1/auth/login -> 200 (28.6 ms)
+2026-10-09 16:03:08,665 [INFO] ccps: POST /api/v1/auth/token/refresh -> 200 (24.8 ms)
+2026-10-09 16:03:08,670 [INFO] ccps: POST /api/v1/auth/token/refresh -> 401 (2.1 ms)
+2026-10-09 16:03:08,687 [INFO] ccps: POST /api/v1/auth/logout -> 200 (15.4 ms)
+2026-10-09 16:03:08,692 [INFO] ccps: POST /api/v1/auth/token/refresh -> 401 (2.9 ms)
+2026-10-09 16:03:09,126 [INFO] ccps: POST /api/v1/auth/login -> 200 (26.6 ms)
+2026-10-09 16:03:09,133 [INFO] ccps: POST /api/v1/auth/token/refresh -> 401 (3.1 ms)
+2026-10-09 16:03:09,453 [INFO] ccps: GET /api/v1/auth/profile -> 401 (1.8 ms)
+2026-10-09 16:03:09,457 [INFO] ccps: GET /api/v1/auth/profile -> 200 (2.2 ms)
+2026-10-09 16:03:09,474 [INFO] ccps: PATCH /api/v1/auth/profile -> 200 (16.1 ms)
+2026-10-09 16:03:12,632 [INFO] ccps: POST /api/v1/auth/change-password -> 200 (143.0 ms)
+2026-10-09 16:03:12,642 [INFO] ccps: POST /api/v1/auth/change-password -> 400 (6.8 ms)
+2026-10-09 16:11:51,911 [INFO] ccps: GET /docs -> 200 (1.5 ms)
+2026-10-09 16:11:52,741 [INFO] ccps: GET /openapi.json -> 200 (721.4 ms)
+2026-10-09 16:12:50,180 [INFO] ccps: POST /api/v1/auth/register -> 422 (49.0 ms)
+2026-10-09 16:13:01,006 [ERROR] ccps: Unhandled error on POST /api/v1/auth/register
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 149, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3284, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 445, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1303, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 709, in checkout
+    rec = pool._do_get()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 176, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 174, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 386, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 671, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 906, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 869, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 373, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 702, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 1010, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 810, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 39, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\auth.py", line 27, in register
+    user = auth_service.register_user(db, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\auth_service.py", line 35, in register_user
+    if db.scalar(select(User).where(User.email == data.email)):
+       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2534, in scalar
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        **kw,
+        ^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2350, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2173, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<sqlalchemy generated _go() wrapper for sqlalchemy.orm.session.SessionTransaction._connection_for_bind>", line 2, in _connection_for_bind
+    return target(fn, self, bind, execution_options)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1203, in _connection_for_bind
+    conn = bind.connect()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3260, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 151, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2417, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 149, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3284, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 445, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1303, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 709, in checkout
+    rec = pool._do_get()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 176, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 174, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 386, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 671, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 906, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 869, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 373, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 702, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 1010, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 810, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/21/e3q8)
+2026-10-09 16:15:01,389 [ERROR] ccps: Unhandled error on POST /api/v1/auth/register
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 149, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3284, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 445, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1303, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 709, in checkout
+    rec = pool._do_get()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 176, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 174, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 386, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 671, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 906, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 869, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 373, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 702, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 1010, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 810, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 39, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\auth.py", line 27, in register
+    user = auth_service.register_user(db, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\auth_service.py", line 35, in register_user
+    if db.scalar(select(User).where(User.email == data.email)):
+       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2534, in scalar
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        **kw,
+        ^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2350, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2173, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<sqlalchemy generated _go() wrapper for sqlalchemy.orm.session.SessionTransaction._connection_for_bind>", line 2, in _connection_for_bind
+    return target(fn, self, bind, execution_options)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1203, in _connection_for_bind
+    conn = bind.connect()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3260, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 151, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2417, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 149, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3284, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 445, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1303, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 709, in checkout
+    rec = pool._do_get()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 176, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 174, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 386, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 671, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 906, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 869, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 373, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 702, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 1010, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 810, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/21/e3q8)
+2026-10-09 16:15:15,782 [ERROR] ccps: Unhandled error on POST /api/v1/auth/register
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 149, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3284, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 445, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1303, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 709, in checkout
+    rec = pool._do_get()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 176, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 174, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 386, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 671, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 906, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 869, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 373, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 702, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 1010, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 810, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 39, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\auth.py", line 27, in register
+    user = auth_service.register_user(db, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\auth_service.py", line 35, in register_user
+    if db.scalar(select(User).where(User.email == data.email)):
+       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2534, in scalar
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        **kw,
+        ^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2350, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2173, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<sqlalchemy generated _go() wrapper for sqlalchemy.orm.session.SessionTransaction._connection_for_bind>", line 2, in _connection_for_bind
+    return target(fn, self, bind, execution_options)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1203, in _connection_for_bind
+    conn = bind.connect()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3260, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 151, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2417, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 149, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3284, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 445, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1303, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 709, in checkout
+    rec = pool._do_get()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 176, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 174, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 386, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 671, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 906, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 869, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 373, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 702, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 1010, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 810, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/21/e3q8)
+2026-10-09 16:15:32,687 [ERROR] ccps: Unhandled error on POST /api/v1/auth/register
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 149, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3284, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 445, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1303, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 709, in checkout
+    rec = pool._do_get()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 176, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 174, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 386, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 671, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 906, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 869, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 373, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 702, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 1010, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 810, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 39, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\auth.py", line 27, in register
+    user = auth_service.register_user(db, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\auth_service.py", line 35, in register_user
+    if db.scalar(select(User).where(User.email == data.email)):
+       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2534, in scalar
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        **kw,
+        ^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2350, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2173, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<sqlalchemy generated _go() wrapper for sqlalchemy.orm.session.SessionTransaction._connection_for_bind>", line 2, in _connection_for_bind
+    return target(fn, self, bind, execution_options)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1203, in _connection_for_bind
+    conn = bind.connect()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3260, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 151, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2417, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 149, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3284, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 445, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1303, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 709, in checkout
+    rec = pool._do_get()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 176, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 174, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 386, in _create_connection
+    return _ConnectionRecord(self)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 671, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 906, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 166, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\create.py", line 645, in connect
+    return dialect.connect(*cargs_tup, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 869, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 373, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 702, in connect
+    self._request_authentication()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 1010, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\connections.py", line 810, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: NO)")
+(Background on this error at: https://sqlalche.me/e/21/e3q8)
+2026-10-09 16:23:09,383 [ERROR] ccps: Unhandled error on POST /api/v1/auth/register
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1943, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 39, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\auth.py", line 27, in register
+    user = auth_service.register_user(db, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\auth_service.py", line 35, in register_user
+    if db.scalar(select(User).where(User.email == data.email)):
+       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2534, in scalar
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        **kw,
+        ^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2363, in _execute_internal
+    compile_state_cls.orm_execute_statement(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 316, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1448, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 533, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1668, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<9 lines>...
+        param_dict=param_dict,
+    )
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1822, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1962, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2332, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1943, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id, users.password, users.last_login, users.is_superuser, users.first_name, users.last_name, users.is_staff, users.is_active, users.date_joined, users.email, users.phone_number, users.role, users.updated_at 
+FROM users 
+WHERE users.email = ?]
+[parameters: ('soumyasree@gmail.com',)]
+(Background on this error at: https://sqlalche.me/e/21/e3q8)
+2026-10-09 16:24:04,666 [ERROR] ccps: Unhandled error on POST /api/v1/auth/register
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1943, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 39, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\auth.py", line 27, in register
+    user = auth_service.register_user(db, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\auth_service.py", line 35, in register_user
+    if db.scalar(select(User).where(User.email == data.email)):
+       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2534, in scalar
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        **kw,
+        ^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2363, in _execute_internal
+    compile_state_cls.orm_execute_statement(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 316, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1448, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 533, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1668, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<9 lines>...
+        param_dict=param_dict,
+    )
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1822, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1962, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2332, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1943, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id, users.password, users.last_login, users.is_superuser, users.first_name, users.last_name, users.is_staff, users.is_active, users.date_joined, users.email, users.phone_number, users.role, users.updated_at 
+FROM users 
+WHERE users.email = ?]
+[parameters: ('soumyasree@gmail.com',)]
+(Background on this error at: https://sqlalche.me/e/21/e3q8)
+2026-10-09 16:24:10,207 [INFO] ccps: GET /docs -> 200 (0.9 ms)
+2026-10-09 16:24:11,520 [INFO] ccps: GET /openapi.json -> 200 (1157.4 ms)
+2026-10-09 16:25:04,373 [INFO] ccps: POST /api/v1/auth/register -> 422 (5.6 ms)
+2026-10-09 16:25:18,051 [ERROR] ccps: Unhandled error on POST /api/v1/auth/register
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1943, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 39, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\auth.py", line 27, in register
+    user = auth_service.register_user(db, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\auth_service.py", line 35, in register_user
+    if db.scalar(select(User).where(User.email == data.email)):
+       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2534, in scalar
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        **kw,
+        ^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2363, in _execute_internal
+    compile_state_cls.orm_execute_statement(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\orm\context.py", line 316, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1448, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 533, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1668, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<9 lines>...
+        param_dict=param_dict,
+    )
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1822, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1962, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2332, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1943, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id, users.password, users.last_login, users.is_superuser, users.first_name, users.last_name, users.is_staff, users.is_active, users.date_joined, users.email, users.phone_number, users.role, users.updated_at 
+FROM users 
+WHERE users.email = ?]
+[parameters: ('farhanfazil@gmail.com',)]
+(Background on this error at: https://sqlalche.me/e/21/e3q8)
+2026-10-09 16:27:48,720 [INFO] ccps: POST /api/v1/auth/register -> 201 (895.6 ms)
+2026-10-09 16:29:06,193 [INFO] ccps: GET /api/v1/admin/dashboard -> 200 (295.8 ms)
+2026-10-09 16:29:27,637 [INFO] ccps: GET /api/v1/admin/users -> 200 (28.4 ms)
+2026-10-09 16:29:54,101 [INFO] ccps: GET /api/v1/admin/users/1 -> 200 (22.6 ms)
+2026-10-09 16:30:06,667 [INFO] ccps: GET /api/v1/admin/payments -> 200 (24.5 ms)
+2026-10-09 16:30:17,390 [INFO] ccps: GET /api/v1/admin/payments/1 -> 404 (12.7 ms)
+2026-10-09 16:30:43,260 [INFO] ccps: GET /api/v1/integration/health -> 401 (11.0 ms)
+2026-10-09 16:33:04,499 [INFO] ccps: POST /api/v1/auth/login -> 200 (806.1 ms)
+2026-10-09 16:34:07,861 [INFO] ccps: POST /api/v1/auth/token/refresh -> 200 (86.1 ms)
+2026-10-09 16:34:31,396 [INFO] ccps: POST /api/v1/auth/logout -> 200 (60.3 ms)
+2026-10-09 16:34:44,269 [INFO] ccps: GET /api/v1/auth/profile -> 200 (8.3 ms)
+2026-10-09 16:36:16,870 [INFO] ccps: PATCH /api/v1/auth/profile -> 200 (12.8 ms)
+2026-10-09 16:37:07,339 [INFO] ccps: POST /api/v1/auth/change-password -> 422 (8.5 ms)
+2026-10-09 16:38:03,060 [INFO] ccps: POST /api/v1/auth/change-password -> 200 (1403.3 ms)
+2026-10-09 16:38:18,011 [INFO] ccps: GET /api/v1/cards -> 200 (42.2 ms)
+2026-10-09 16:39:59,213 [ERROR] ccps: Unhandled error on POST /api/v1/cards
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 41, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\cards.py", line 38, in add_card
+    card = card_service.add_card(db, current_user, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\card_service.py", line 62, in add_card
+    card.card_number_encrypted = encrypt_card_number(number)
+                                 ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 16, in encrypt_card_number
+    return _get_fernet().encrypt(card_number.encode()).decode()
+           ~~~~~~~~~~~^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 11, in _get_fernet
+    raise RuntimeError("CARD_ENCRYPTION_KEY is missing in .env")
+RuntimeError: CARD_ENCRYPTION_KEY is missing in .env
+2026-10-09 16:44:13,724 [ERROR] ccps: Unhandled error on POST /api/v1/cards
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 41, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\cards.py", line 38, in add_card
+    card = card_service.add_card(db, current_user, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\card_service.py", line 62, in add_card
+    card.card_number_encrypted = encrypt_card_number(number)
+                                 ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 16, in encrypt_card_number
+    return _get_fernet().encrypt(card_number.encode()).decode()
+           ~~~~~~~~~~~^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 11, in _get_fernet
+    raise RuntimeError("CARD_ENCRYPTION_KEY is missing in .env")
+RuntimeError: CARD_ENCRYPTION_KEY is missing in .env
+2026-10-09 16:46:19,432 [ERROR] ccps: Unhandled error on POST /api/v1/cards
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 41, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\cards.py", line 38, in add_card
+    card = card_service.add_card(db, current_user, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\card_service.py", line 62, in add_card
+    card.card_number_encrypted = encrypt_card_number(number)
+                                 ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 16, in encrypt_card_number
+    return _get_fernet().encrypt(card_number.encode()).decode()
+           ~~~~~~~~~~~^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 11, in _get_fernet
+    raise RuntimeError("CARD_ENCRYPTION_KEY is missing in .env")
+RuntimeError: CARD_ENCRYPTION_KEY is missing in .env
+2026-10-09 16:47:12,541 [ERROR] ccps: Unhandled error on POST /api/v1/cards
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 41, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\cards.py", line 38, in add_card
+    card = card_service.add_card(db, current_user, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\card_service.py", line 62, in add_card
+    card.card_number_encrypted = encrypt_card_number(number)
+                                 ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 16, in encrypt_card_number
+    return _get_fernet().encrypt(card_number.encode()).decode()
+           ~~~~~~~~~~~^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 11, in _get_fernet
+    raise RuntimeError("CARD_ENCRYPTION_KEY is missing in .env")
+RuntimeError: CARD_ENCRYPTION_KEY is missing in .env
+2026-10-09 16:48:30,167 [ERROR] ccps: Unhandled error on POST /api/v1/cards
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 41, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\cards.py", line 38, in add_card
+    card = card_service.add_card(db, current_user, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\card_service.py", line 62, in add_card
+    card.card_number_encrypted = encrypt_card_number(number)
+                                 ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 16, in encrypt_card_number
+    return _get_fernet().encrypt(card_number.encode()).decode()
+           ~~~~~~~~~~~^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 11, in _get_fernet
+    raise RuntimeError("CARD_ENCRYPTION_KEY is missing in .env")
+RuntimeError: CARD_ENCRYPTION_KEY is missing in .env
+2026-10-09 16:53:24,246 [ERROR] ccps: Unhandled error on POST /api/v1/cards
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 41, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\cards.py", line 38, in add_card
+    card = card_service.add_card(db, current_user, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\card_service.py", line 62, in add_card
+    card.card_number_encrypted = encrypt_card_number(number)
+                                 ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 16, in encrypt_card_number
+    return _get_fernet().encrypt(card_number.encode()).decode()
+           ~~~~~~~~~~~^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 11, in _get_fernet
+    raise RuntimeError("CARD_ENCRYPTION_KEY is missing in .env")
+RuntimeError: CARD_ENCRYPTION_KEY is missing in .env
+2026-10-09 16:55:59,001 [ERROR] ccps: Unhandled error on POST /api/v1/cards
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\cryptography\fernet.py", line 39, in __init__
+    key = base64.urlsafe_b64decode(key)
+  File "C:\Users\poorn\AppData\Local\Python\pythoncore-3.14-64\Lib\base64.py", line 131, in urlsafe_b64decode
+    return b64decode(s)
+  File "C:\Users\poorn\AppData\Local\Python\pythoncore-3.14-64\Lib\base64.py", line 85, in b64decode
+    return binascii.a2b_base64(s, strict_mode=validate)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+binascii.Error: Incorrect padding
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 197, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\main.py", line 41, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 173, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\cors.py", line 149, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1817, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 2869, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1843, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 1308, in handle
+    await effective_context.app(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\routers\cards.py", line 38, in add_card
+    card = card_service.add_card(db, current_user, data)
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\services\card_service.py", line 62, in add_card
+    card.card_number_encrypted = encrypt_card_number(number)
+                                 ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 16, in encrypt_card_number
+    return _get_fernet().encrypt(card_number.encode()).decode()
+           ~~~~~~~~~~~^^
+  File "D:\New folder (3)\credit_card_payment_system\fastapi_service\app\core\encryption.py", line 12, in _get_fernet
+    return Fernet(settings.CARD_ENCRYPTION_KEY.encode())
+  File "D:\python taske\credit_card_payment_system\venv\Lib\site-packages\cryptography\fernet.py", line 41, in __init__
+    raise ValueError(
+        "Fernet key must be 32 url-safe base64-encoded bytes."
+    ) from exc
+ValueError: Fernet key must be 32 url-safe base64-encoded bytes.
+2026-10-09 16:58:07,275 [INFO] ccps: POST /api/v1/cards -> 201 (132.4 ms)
+2026-10-09 16:58:55,927 [INFO] ccps: GET /api/v1/cards/1 -> 200 (35.6 ms)
+2026-10-09 16:59:08,381 [INFO] ccps: PATCH /api/v1/cards/1 -> 200 (40.2 ms)
+2026-10-09 16:59:25,982 [INFO] ccps: POST /api/v1/cards/1/set-default -> 200 (57.1 ms)
+2026-10-09 16:59:41,979 [INFO] ccps: POST /api/v1/cards/1/set-default -> 200 (23.8 ms)
+2026-10-09 16:59:54,197 [INFO] ccps: POST /api/v1/cards/1/block -> 200 (50.7 ms)
+2026-10-09 17:00:04,202 [INFO] ccps: DELETE /api/v1/cards/1 -> 200 (46.1 ms)
+2026-10-09 17:01:48,686 [INFO] ccps: POST /api/v1/payments -> 422 (52.0 ms)
+2026-10-09 17:02:50,781 [INFO] ccps: POST /api/v1/payments -> 400 (49.3 ms)
+2026-10-09 17:03:00,128 [INFO] ccps: POST /api/v1/payments -> 404 (12.2 ms)
+2026-10-09 17:04:07,080 [INFO] ccps: POST /api/v1/cards -> 401 (5.1 ms)
+2026-10-09 17:04:17,277 [INFO] ccps: POST /api/v1/auth/token/refresh -> 401 (11.6 ms)
+2026-10-09 17:04:18,551 [INFO] ccps: POST /api/v1/auth/token/refresh -> 401 (7.9 ms)
+2026-10-09 17:04:25,920 [INFO] ccps: POST /api/v1/auth/login -> 400 (761.4 ms)
+2026-10-09 17:05:07,616 [INFO] ccps: POST /api/v1/cards -> 401 (31.6 ms)
+2026-10-09 17:05:25,645 [INFO] ccps: POST /api/v1/auth/login -> 400 (692.1 ms)
+2026-10-09 17:05:37,632 [INFO] ccps: POST /api/v1/auth/login -> 400 (673.7 ms)
+2026-10-09 17:06:08,531 [INFO] ccps: POST /api/v1/auth/login -> 400 (659.7 ms)
+2026-10-09 17:06:51,717 [INFO] ccps: POST /api/v1/auth/login -> 400 (7.1 ms)
+2026-10-09 17:07:59,465 [INFO] ccps: POST /api/v1/auth/register -> 201 (695.8 ms)
+2026-10-09 17:08:05,364 [INFO] ccps: POST /api/v1/auth/login -> 200 (931.0 ms)
+2026-10-09 17:09:25,145 [INFO] ccps: POST /api/v1/auth/token/refresh -> 200 (48.7 ms)
+2026-10-09 17:09:45,820 [INFO] ccps: POST /api/v1/cards -> 422 (32.4 ms)
+2026-10-09 17:09:57,197 [INFO] ccps: POST /api/v1/cards -> 400 (7.1 ms)
+2026-10-09 17:10:06,771 [INFO] ccps: POST /api/v1/cards -> 201 (45.6 ms)
+2026-10-09 17:10:42,633 [INFO] ccps: POST /api/v1/payments -> 201 (97.5 ms)
+2026-10-09 17:11:02,088 [INFO] ccps: GET /api/v1/payments/2 -> 404 (29.1 ms)
+2026-10-09 17:12:52,091 [INFO] ccps: GET /api/v1/payments/1 -> 200 (11.2 ms)
+2026-10-09 17:13:18,170 [INFO] ccps: POST /api/v1/payments/1/refund -> 200 (63.0 ms)
+2026-10-09 17:13:27,886 [INFO] ccps: GET /api/v1/payments -> 200 (59.6 ms)
+2026-10-09 17:13:45,890 [INFO] ccps: POST /api/v1/cards/1/pay-bill -> 404 (9.8 ms)
+2026-10-09 17:14:12,409 [INFO] ccps: POST /api/v1/cards/1/pay-bill -> 404 (41.3 ms)
+2026-10-09 17:14:21,922 [INFO] ccps: POST /api/v1/cards/1/pay-bill -> 404 (10.8 ms)
+2026-10-09 17:14:28,413 [INFO] ccps: POST /api/v1/cards/2/pay-bill -> 400 (8.5 ms)
+2026-10-09 17:15:24,276 [INFO] ccps: POST /api/v1/cards -> 400 (9.4 ms)
+2026-10-09 17:15:34,120 [INFO] ccps: POST /api/v1/cards -> 400 (7.7 ms)
+2026-10-09 17:16:39,464 [INFO] ccps: POST /api/v1/cards -> 400 (10.6 ms)
+2026-10-09 17:17:18,323 [INFO] ccps: POST /api/v1/cards -> 201 (48.6 ms)
+2026-10-09 17:17:30,197 [INFO] ccps: POST /api/v1/cards/3/pay-bill -> 422 (2.8 ms)
+2026-10-09 17:17:41,270 [INFO] ccps: POST /api/v1/cards/3/pay-bill -> 400 (10.7 ms)
+2026-10-09 17:18:02,306 [INFO] ccps: POST /api/v1/payments -> 200 (10.9 ms)
+2026-10-09 17:18:09,832 [INFO] ccps: POST /api/v1/cards/3/pay-bill -> 400 (8.7 ms)
+2026-10-09 17:18:30,752 [INFO] ccps: GET /api/v1/transactions -> 200 (53.4 ms)
+2026-10-09 17:18:38,838 [INFO] ccps: GET /api/v1/transactions/summary -> 200 (19.9 ms)
+2026-10-09 17:19:29,608 [INFO] ccps: GET /api/v1/transactions/3 -> 404 (11.4 ms)
+2026-10-09 17:19:35,272 [INFO] ccps: GET /api/v1/transactions/2 -> 200 (11.2 ms)
+2026-10-09 17:19:49,884 [INFO] ccps: GET /api/v1/admin/dashboard -> 200 (132.5 ms)
+2026-10-09 17:20:03,538 [INFO] ccps: GET /api/v1/admin/users -> 200 (21.7 ms)
+2026-10-09 17:20:10,315 [INFO] ccps: GET /api/v1/admin/users/1 -> 200 (16.0 ms)
+2026-10-09 17:20:17,547 [INFO] ccps: GET /api/v1/admin/users/1 -> 200 (7.2 ms)
+2026-10-09 17:20:34,896 [INFO] ccps: POST /api/v1/admin/users/2/role -> 400 (7.9 ms)
+2026-10-09 17:20:41,026 [INFO] ccps: POST /api/v1/admin/users/1/role -> 200 (46.4 ms)
+2026-10-09 17:20:49,570 [INFO] ccps: GET /api/v1/admin/cards -> 200 (32.4 ms)
+2026-10-09 17:21:04,099 [INFO] ccps: POST /api/v1/admin/cards/1/status -> 400 (12.0 ms)
+2026-10-09 17:21:10,632 [INFO] ccps: POST /api/v1/admin/cards/3/status -> 200 (37.5 ms)
+2026-10-09 17:32:47,357 [INFO] ccps: POST /api/v1/admin/cards/1/credit-limit -> 200 (56.7 ms)
+2026-10-09 17:33:12,470 [INFO] ccps: GET /api/v1/admin/payments/1 -> 200 (11.0 ms)
+2026-10-09 17:33:26,140 [INFO] ccps: GET /api/v1/admin/transactions -> 200 (20.9 ms)
+2026-10-09 17:33:37,117 [INFO] ccps: GET /api/v1/admin/audit-logs -> 200 (26.6 ms)
+2026-10-09 17:34:06,073 [INFO] ccps: POST /api/v1/integration/fraud-check -> 401 (47.0 ms)
+2026-10-09 17:34:18,290 [INFO] ccps: POST /api/v1/integration/fraud-check -> 401 (3.9 ms)
+2026-10-09 17:34:35,437 [INFO] ccps: POST /api/v1/integration/fraud-check -> 401 (3.7 ms)
+2026-10-09 17:34:46,395 [INFO] ccps: POST /api/v1/integration/fraud-check -> 401 (3.3 ms)
+2026-10-09 17:36:34,242 [INFO] ccps: POST /api/v1/integration/fraud-check -> 200 (255.1 ms)
+2026-10-09 17:37:04,982 [INFO] ccps: GET /api/v1/integration/health -> 401 (3.6 ms)
+2026-10-09 17:37:10,860 [INFO] ccps: GET /api/v1/integration/health -> 200 (4.3 ms)
+2026-10-10 09:20:07,248 [INFO] ccps: GET /docs -> 200 (1.7 ms)
+2026-10-10 09:20:07,776 [INFO] ccps: GET /openapi.json -> 200 (422.6 ms)
+2026-10-10 09:26:07,742 [INFO] ccps: POST /api/v1/auth/register -> 201 (414.9 ms)
+2026-10-10 09:27:46,904 [INFO] ccps: POST /api/v1/auth/login -> 200 (326.5 ms)
+2026-10-10 09:29:29,180 [INFO] ccps: POST /api/v1/auth/token/refresh -> 200 (52.4 ms)
+2026-10-10 09:30:58,871 [INFO] ccps: POST /api/v1/auth/logout -> 400 (9.3 ms)
+2026-10-10 09:31:58,808 [INFO] ccps: POST /api/v1/auth/logout -> 200 (39.5 ms)
+2026-10-10 09:32:45,782 [INFO] ccps: GET /api/v1/auth/profile -> 200 (6.3 ms)
+2026-10-10 09:33:48,636 [INFO] ccps: PATCH /api/v1/auth/profile -> 200 (35.0 ms)
+2026-10-10 09:35:23,576 [INFO] ccps: POST /api/v1/auth/change-password -> 200 (622.3 ms)
+2026-10-10 09:36:02,935 [INFO] ccps: GET /api/v1/cards -> 200 (57.9 ms)
+2026-10-10 09:39:55,294 [INFO] ccps: POST /api/v1/cards -> 201 (102.0 ms)
+2026-10-10 09:41:09,373 [INFO] ccps: GET /api/v1/cards/1 -> 404 (28.7 ms)
+2026-10-10 09:41:40,248 [INFO] ccps: GET /api/v1/cards/4 -> 200 (18.0 ms)
+2026-10-10 09:42:53,363 [INFO] ccps: PATCH /api/v1/cards/4 -> 200 (55.4 ms)
+2026-10-10 09:43:47,562 [INFO] ccps: POST /api/v1/cards/4/set-default -> 200 (51.1 ms)
+2026-10-10 09:44:14,694 [INFO] ccps: POST /api/v1/cards/4/block -> 200 (40.7 ms)
+2026-10-10 09:44:43,141 [INFO] ccps: DELETE /api/v1/cards/4 -> 200 (19.0 ms)
+2026-10-10 09:46:00,955 [INFO] ccps: POST /api/v1/cards -> 400 (3.9 ms)
+2026-10-10 09:46:10,833 [INFO] ccps: POST /api/v1/cards -> 201 (42.0 ms)
+2026-10-10 09:47:52,031 [INFO] ccps: POST /api/v1/payments -> 201 (65.3 ms)
+2026-10-10 09:48:19,497 [INFO] ccps: GET /api/v1/payments/4 -> 404 (7.8 ms)
+2026-10-10 09:48:51,199 [INFO] ccps: GET /api/v1/payments/2 -> 200 (6.2 ms)
+2026-10-10 09:49:13,114 [INFO] ccps: GET /api/v1/payments -> 200 (36.9 ms)
+2026-10-10 09:49:44,912 [INFO] ccps: POST /api/v1/payments/2/refund -> 200 (52.8 ms)
+2026-10-10 09:51:00,538 [INFO] ccps: GET /api/v1/transactions -> 200 (19.2 ms)
+2026-10-10 09:51:29,363 [INFO] ccps: GET /api/v1/transactions/summary -> 200 (24.2 ms)
+2026-10-10 09:52:52,936 [INFO] ccps: GET /api/v1/transactions/2 -> 404 (17.6 ms)
+2026-10-10 09:52:59,017 [INFO] ccps: GET /api/v1/transactions/4 -> 200 (22.9 ms)
+2026-10-10 09:53:33,801 [INFO] ccps: GET /api/v1/admin/dashboard -> 200 (29.1 ms)
+2026-10-10 09:53:56,407 [INFO] ccps: GET /api/v1/admin/users -> 200 (42.9 ms)
+2026-10-10 09:54:21,736 [INFO] ccps: GET /api/v1/admin/cards -> 200 (20.5 ms)
+2026-10-10 09:54:54,240 [INFO] ccps: POST /api/v1/admin/cards/4/status -> 200 (32.2 ms)
+2026-10-10 09:55:27,777 [INFO] ccps: GET /api/v1/admin/payments -> 200 (36.8 ms)
+2026-10-10 09:56:53,450 [INFO] ccps: POST /api/v1/integration/fraud-check -> 200 (8.1 ms)
+2026-10-10 09:57:26,278 [INFO] ccps: GET /api/v1/integration/health -> 401 (1.6 ms)
+2026-10-10 09:57:47,215 [INFO] ccps: GET /api/v1/integration/health -> 200 (3.4 ms)
+2026-10-12 09:37:08,987 [INFO] ccps: GET /docs -> 200 (1.5 ms)
+2026-10-12 09:37:10,475 [INFO] ccps: GET /openapi.json -> 200 (1218.5 ms)
+2026-10-12 09:37:43,203 [INFO] ccps: GET /docs -> 200 (1.9 ms)
+2026-10-12 09:37:44,292 [INFO] ccps: GET /openapi.json -> 200 (985.5 ms)
+2026-10-12 09:38:04,958 [INFO] ccps: GET /docs -> 200 (1.2 ms)
+2026-10-12 09:38:05,192 [INFO] ccps: GET /openapi.json -> 200 (179.0 ms)
